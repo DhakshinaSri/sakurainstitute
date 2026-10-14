@@ -1,0 +1,9 @@
+{
+  "name": "Sakura Language & Career Institute",
+  "short_name": "Sakura Institute",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF6EC",
+  "theme_color": "#1E459F",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
