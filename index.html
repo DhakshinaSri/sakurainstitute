@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Redirect handler script for SPA refresh on GitHub Pages -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
+
     <title>Sakura Language & Career Institute | Learn Japanese Online – JLPT N5 to N1</title>
     <meta
       name="description"
@@ -43,7 +58,7 @@
         "knowsLanguage": ["ja", "en"]
       }
     </script>
-    <script type="module" crossorigin src="/sakurainstitute/assets/index-FuKYyvpF.js"></script>
+    <script type="module" crossorigin src="/sakurainstitute/assets/index-CP9arsPn.js"></script>
     <link rel="modulepreload" crossorigin href="/sakurainstitute/assets/useSeo-Bvkt_aUl.js">
     <link rel="stylesheet" crossorigin href="/sakurainstitute/assets/index-CYSbxKRF.css">
   </head>
